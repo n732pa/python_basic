@@ -9,3 +9,4 @@ def triArea(base,height):
 if __name__ =='__main__':
     print(f'사각형의 넓이: {rectArea(5,10)}')
     print(f'삼각형의 넓이: {triArea(5,10)}')
+    print('종료')
