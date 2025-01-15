@@ -17,7 +17,7 @@ def select(menu,menuname):
     return order
 
 def money_calc(order,menu,menu_name):
-        tot_price=0
+    tot_price=0
     for x in order.keys():
         price=0
         if x in menu.keys():
@@ -25,15 +25,16 @@ def money_calc(order,menu,menu_name):
         print(f'{x}({menu[x]}원) X {order[x]} = {price:,}원')
         tot_price = tot_price + price
     
-    print(f'{menu-name} 가격 : {tot_price}')
+    print(f'{menu_name} 가격 : {tot_price}')
+
     return tot_price
 
 
 
 if __name__=='__main__':
 
-    pizza_menu={'페페로니 피자':'3000','치즈 피자':'3200','콤비네이션 피자':'3500','불고기 피자':'3600','해산물 피자':'3800'}
-    drink_menu={'콜라':'1500','사이다':'1500','생수':'1000'}
+    pizza_menu={'페페로니 피자':3000,'치즈 피자':3200,'콤비네이션 피자':3500,'불고기 피자':3600,'해산물 피자':3800}
+    drink_menu={'콜라':1500,'사이다':1500,'생수':1000}
 
     order_pizza= select(pizza_menu,'피자')
     print(order_pizza)
